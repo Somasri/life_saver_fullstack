@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      .container {
+        width: 100%;
+        height: 100vh;
+        background-image: url("https://images.moneycontrol.com/static-mcnews/2019/09/macro-man-motorbike-motorcycle-wallpaper-preview.jpg?impolicy=website&width=770&height=431");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+      }
+      header h1 {
+        text-align: center;
+        font-size: 40px;
+        color: white;
+      }
+
+      header {
+        padding: 10px;
+        background-color: rgb(122, 59, 41);
+      }
+
+      .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+
+      .sidebar a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: rgb(122, 59, 41);
+        display: block;
+        transition: 0.3s;
+      }
+      .sidebar a:hover {
+        color: #f1f1f1;
+      }
+      .sidebar .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: rgb(122, 59, 41);
+        color: white;
+        padding: 10px 15px;
+        border: none;
+      }
+      .openbtn:hover {
+        background-color: rgb(122, 59, 41);
+      }
+      #main {
+        transition: margin-left 0.5s;
+        padding: 16px;
+      }
+      /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+      @media screen and (max-height: 450px) {
+        .sidebar {
+          padding-top: 15px;
+        }
+        .sidebar a {
+          font-size: 18px;
+        }
+      }
+      .form-box {
+        width: 90%;
+        max-width: 1050px;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 50px 60px 70px;
+        background: #fff;
+        text-align: left;
+      }
+      .form-box p {
+        font-size: x-large;
+        color: rgb(4, 4, 4);
+        line-height: 250%;
+      }
+
+      .form-box a {
+        font-size: x-large;
+        color: rgb(107, 47, 47);
+        line-height: 250%;
+      }
+
+      .form-box h3 {
+        font-size: 30px;
+        margin-bottom: 60px;
+        position: relative;
+      }
+      .input-field {
+        background: #eaeaea;
+        margin: 15px 0;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+      }
+      input {
+        width: 100%;
+        background: transparent;
+        border: 0;
+        outline: 0;
+        padding: 18px 15px;
+      }
+      .input-field i {
+        margin-left: 15px;
+        color: #999;
+      }
+      .btn-field {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .btn-field button {
+        flex-basis: 48%;
+        background: rgb(122, 59, 41);
+        color: #fff;
+        height: 40px;
+        border-radius: 20px;
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+        transition: background 1s;
+      }
+      .btn-field a {
+        text-decoration: none;
+        color: #fff;
+      }
+      .input-group {
+        height: 220px;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-box">
+        <a
+          href="https://docs.google.com/forms/d/1fOVdVsBGxcXUrTQYFiWtqCDIDlmX2WE58LNU-FQyqvo/edit"
+          >Get Certificated!!!</a
+        >
+        <p>
+          Please fill the above form after saving a life to get certified.<br />
+        </p>
+      </div>
+      <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft = "0";
+        }
+      </script>
+    </div>
+  </body>
+</html>

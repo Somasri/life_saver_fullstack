@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LIFE SAVER</title>
+<script>
+  function validate()
+  {
+    if(document.getElementById("number").value == "")
+    {
+     alert( 'FILL THE BIKE NUMBER' );
+       return false;
+    }
+    else
+    {
+      alert(" YOU SAVED A LIFE...!!!!!  Thank you!!!!!!!!");
+       return false;
+    }
+  }
+
+</script>
+<style>
+body {
+	background-image: url("https://images.moneycontrol.com/static-mcnews/2019/09/macro-man-motorbike-motorcycle-wallpaper-preview.jpg?impolicy=website&width=770&height=431");
+	background-repeat: no-repeat ;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.form-box{
+    width: 90%;
+    max-width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    border-radius: 15px;
+    padding: 50px 60px 70px;
+    text-align: center;
+}
+.input-group{
+  margin:5px;
+  display:block;
+  align-items: center;
+}
+.btn-field button{
+    width: 20%;
+    background: rgb(122, 59, 41);
+    color: #fff;
+    height: 40px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 15px;
+}
+</style>
+</head>
+<body>
+<center>
+<form method= "post" action="#" onsubmit= "return validate()" >
+<div class="form-box">
+  <form action="">
+    <div class="input-group">
+    BIKE NUMBER: <input type="text" id="number" value="" required><br> <br>
+    SAVE FOR: <select name="number" id="number1" required> <br>
+        <option value="open stand"> 1. OPEN STAND </option>
+        <option value="tyre has no air"> 2.TYRE HAS NO AIR </option>
+        <option value="kid at back is sleeping"> 3. KID AT BACK IS SLEEPING </option>
+        <option value="petrol leakage"> 4. PETROL LEAKAGE </option>
+        <option value="caught fire"> 5. CAUGHT FIRE </option>
+        <option value="clothes strucked in tyre"> 6. CLOTHES STRUCTURED IN TYRE </option>
+    </select><br><br>
+    <div class="btn-field">
+      <button>save</button>
+    </div>
+  </div>
+  </form>
+<!--<table>
+<tr>
+<td>
+<label>BIKE NUMBER:</label></td>
+<td><input type="text" id="number" value="" required=""></td>
+<td><p id="no" style="color:red"></p></td>
+</tr>
+<tr>
+<td>
+<label>SAVE FOR:</label></td>
+<td><select name="number" id="number" >
+  <option value=" "></option>
+  <option value="open stand"> 1. OPEN STAND </option>
+  <option value="tyre has no air"> 2.TYRE HAS NO AIR </option>
+  <option value="kid at back is sleeping"> 3. KID AT BACK IS SLEEPING </option>
+ <option value="petrol leakage"> 4. PETROL LEAKAGE </option>
+   <option value="caught fire"> 5. CAUGHT FIRE </option>
+  <option value="clothes strucked in tyre"> 6. CLOTHES STRUCTURED IN TYRE </option>
+</select><br><br></td></tr>
+<tr><td><input type="submit"onclick="validate()" value="submit"></td>
+</tr>
+</form></center>
+</table>
+-->
+</div></body>
+
+</html>
